@@ -7,3 +7,13 @@ Content-Type: application/json
     "location": "New York"
 }
 ###
+
+GET https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=12345
+###
+
+PUT https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=12345
+Content-Type: application/json
+
+{
+    "location": "San Francisco"
+}

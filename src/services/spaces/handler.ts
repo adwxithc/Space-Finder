@@ -1,6 +1,9 @@
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
 import { postSpaces } from './PostSpaces';
+import { getSpaces } from './GetSpaces';
+import { updateSpace } from './UpdateSpace';
+import { deleteSpace } from './UpdateSpace copy';
 
 const ddbClient = new DynamoDBClient({});
 
@@ -12,12 +15,11 @@ async function handler(event: APIGatewayProxyEvent, context: Context): Promise<A
         case 'POST':
             return await postSpaces(event, ddbClient);
         case 'GET':
-            return {
-                statusCode: 200,
-                body: JSON.stringify({
-                    message: 'GET method is not implemented yet'
-                })
-            }
+            return await getSpaces(event, ddbClient);
+        case 'PUT':
+            return await updateSpace(event, ddbClient);
+        case 'DELETE':
+            return await deleteSpace(event, ddbClient);
 
         default:
             return {
