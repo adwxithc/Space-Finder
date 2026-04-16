@@ -39,6 +39,15 @@ export class LambdaStack extends Stack {
         //     resources: ['*'] //bad practice, but for demo purposes it's fine
         // }))
 
+        spacesLambda.addToRolePolicy(new PolicyStatement({
+            effect: Effect.ALLOW,
+            actions: [
+                'dynamodb:PutItem'
+            ],
+            resources: [props?.spacesTable.tableArn || '']
+        }));
+
+
         this.spacesLambdaIntegration = new LambdaIntegration(spacesLambda);
 
     }

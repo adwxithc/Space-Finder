@@ -1,2 +1,9 @@
-GET https://2r3lv1knbj.execute-api.ap-south-1.amazonaws.com/prod/spaces
+GET https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces
+###
+POST https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces
+Content-Type: application/json
+
+{
+    "location": "New York"
+}
 ###
