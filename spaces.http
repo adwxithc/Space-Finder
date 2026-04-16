@@ -4,16 +4,17 @@ POST https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces
 Content-Type: application/json
 
 {
-    "location": "New York"
+    "location": "New York",
+    "name": "My Space"
 }
 ###
 
-GET https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=12345
+GET https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=ef7008c8-abd6-43ef-86a3-b57496531be5
 ###
 
-PUT https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=12345
+PUT https://0ot7s0cpvl.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=ef7008c8-abd6-43ef-86a3-b57496531be5
 Content-Type: application/json
 
 {
-    "location": "San Francisco"
+    "name": "Adwaith's Space2"
 }
