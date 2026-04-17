@@ -21,8 +21,10 @@
     "typescript": "^6.0.2"
   },
   "dependencies": {
+    "@aws-sdk/client-cognito-identity": "^3.1031.0",
     "@aws-sdk/client-dynamodb": "^3.1030.0",
     "@aws-sdk/client-s3": "^3.1030.0",
+    "@aws-sdk/credential-providers": "^3.1031.0",
     "@aws-sdk/util-dynamodb": "^3.996.2",
     "@types/uuid": "^10.0.0",
     "aws-amplify": "^6.16.4",
