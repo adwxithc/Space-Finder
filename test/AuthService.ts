@@ -7,8 +7,8 @@ const awsRegin = 'ap-south-1';
 Amplify.configure({
     Auth: {
         Cognito: {
-            userPoolId: 'ap-south-1_D5CRTzQgZ',
-            userPoolClientId: 'o1ldroubhp1171nvuqh36a174'
+            userPoolId: 'ap-south-1_bYx0xY68e',
+            userPoolClientId: '2b1dg66n2qu8nhlsj04psqrf5q'
         }
     }
 });
